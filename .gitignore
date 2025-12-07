@@ -36,3 +36,7 @@ build/
 # Local server
 server.py
 server.js
+
+# Portable Git (local-only tooling)
+portable-git/
+PortableGit-*.exe
