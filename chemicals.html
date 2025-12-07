@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Products - Wood Camp Pharma</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<!-- HEADER / NAVBAR -->
+<header>
+    <nav class="container">
+        <div class="logo">Wood Camp Pharma</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="wood.html">Wood Products</a></li>
+            <li><a href="chemicals.html">Chemicals</a></li>
+            <li><a href="pharma.html">Pharma</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="login.html" class="btn-login">Login</a></li>
+        </ul>
+        <button class="nav-toggle">☰</button>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" style="margin-top: 60px; min-height: 60vh; background: linear-gradient(135deg, #1a0a2e 0%, #2d0a3e 50%, #0a2a2e 100%);">
+    <div class="container" style="text-align: center; z-index: 10; position: relative;">
+        <h1>Chemical Products</h1>
+        <p style="font-size: 1.2rem; margin-top: var(--spacing-lg);">Industrial and lab-grade chemicals for diverse applications</p>
+    </div>
+</section>
+
+<!-- SAFETY WARNING -->
+<section style="padding: var(--spacing-lg) 0; background-color: rgba(255, 100, 0, 0.05); border: 1px solid rgba(255, 100, 0, 0.2);">
+    <div class="container">
+        <h3 style="color: #ff9500; margin-bottom: var(--spacing-sm);">⚠️ Safety & Compliance Notice</h3>
+        <p style="color: var(--text-secondary);">
+            All our chemical products are supplied with comprehensive Safety Data Sheets (SDS) and handling instructions. 
+            Products are certified for industrial and laboratory use. Proper storage, handling, and disposal procedures must be followed as per regulatory guidelines.
+        </p>
+    </div>
+</section>
+
+<!-- PRODUCTS SECTION -->
+<section style="padding: var(--spacing-2xl) 0; background-color: var(--bg-dark);">
+    <div class="container">
+        <h2 style="margin-bottom: var(--spacing-lg);">Our Chemical Products</h2>
+
+        <!-- Filters -->
+        <div class="filter-pills">
+            <button class="filter-pill active" onclick="filterProducts('all')">All Products</button>
+            <button class="filter-pill" onclick="filterProducts('industrial')">Industrial</button>
+            <button class="filter-pill" onclick="filterProducts('lab')">Laboratory</button>
+            <button class="filter-pill" onclick="filterProducts('pharma-grade')">Pharma Grade</button>
+            <button class="filter-pill" onclick="filterProducts('specialty')">Specialty</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="card" data-category="industrial">
+                <div class="card-icon">⚗️</div>
+                <h3 class="card-title">Sodium Chloride (NaCl)</h3>
+                <p class="card-description">
+                    <strong>Grade:</strong> Industrial<br>
+                    <strong>Purity:</strong> 99.5% min<br>
+                    <strong>Packaging:</strong> 25kg bags, 500kg drums<br>
+                    <strong>Application:</strong> De-icing, Food preservation, Chemical synthesis
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Sodium Chloride (NaCl)')">Request Quote</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="card" data-category="lab">
+                <div class="card-icon">🧪</div>
+                <h3 class="card-title">Sulfuric Acid (H₂SO₄)</h3>
+                <p class="card-description">
+                    <strong>Grade:</strong> Laboratory & Industrial<br>
+                    <strong>Concentration:</strong> 98% w/w<br>
+                    <strong>Packaging:</strong> 1L, 5L, 25L carboys<br>
+                    <strong>Application:</strong> Metal processing, Battery production
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Sulfuric Acid (H₂SO₄)')">Request Quote</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="card" data-category="pharma-grade">
+                <div class="card-icon">💊</div>
+                <h3 class="card-title">Citric Acid Monohydrate</h3>
+                <p class="card-description">
+                    <strong>Grade:</strong> Pharma/Food Grade<br>
+                    <strong>Purity:</strong> 99.5% min<br>
+                    <strong>Packaging:</strong> 25kg bags, 500kg drums<br>
+                    <strong>Application:</strong> Pharmaceuticals, Food additives, Cleaning agents
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Citric Acid Monohydrate')">Request Quote</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="card" data-category="industrial">
+                <div class="card-icon">⚗️</div>
+                <h3 class="card-title">Calcium Hydroxide Ca(OH)₂</h3>
+                <p class="card-description">
+                    <strong>Grade:</strong> Industrial<br>
+                    <strong>Purity:</strong> 95% min<br>
+                    <strong>Packaging:</strong> 25kg bags, Bulk supply<br>
+                    <strong>Application:</strong> Water treatment, Construction, Metal processing
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Calcium Hydroxide Ca(OH)₂')">Request Quote</button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="card" data-category="specialty">
+                <div class="card-icon">✨</div>
+                <h3 class="card-title">Sodium Hydroxide (NaOH)</h3>
+                <p class="card-description">
+                    <strong>Grade:</strong> Industrial & Lab<br>
+                    <strong>Form:</strong> Solid pellets, Liquid solution<br>
+                    <strong>Purity:</strong> 98% min (solid), 50% solution<br>
+                    <strong>Application:</strong> Soap production, Paper industry, Neutralization
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Sodium Hydroxide (NaOH)')">Request Quote</button>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="card" data-category="lab">
+                <div class="card-icon">🧪</div>
+                <h3 class="card-title">Hydrochloric Acid (HCl)</h3>
+                <p class="card-description">
+                    <strong>Grade:</strong> Laboratory & Industrial<br>
+                    <strong>Concentration:</strong> 37% w/v<br>
+                    <strong>Packaging:</strong> 1L, 5L, 25L carboys<br>
+                    <strong>Application:</strong> Metal cleaning, Pickling, Laboratory analysis
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Hydrochloric Acid (HCl)')">Request Quote</button>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="card" data-category="pharma-grade">
+                <div class="card-icon">💊</div>
+                <h3 class="card-title">Potassium Sorbate</h3>
+                <p class="card-description">
+                    <strong>Grade:</strong> Food & Pharma Grade<br>
+                    <strong>Purity:</strong> 99.0% min<br>
+                    <strong>Packaging:</strong> 25kg bags<br>
+                    <strong>Application:</strong> Food preservation, Cosmetics, Pharmaceuticals
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Potassium Sorbate')">Request Quote</button>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="card" data-category="specialty">
+                <div class="card-icon">✨</div>
+                <h3 class="card-title">Acetic Acid (CH₃COOH)</h3>
+                <p class="card-description">
+                    <strong>Grade:</strong> Industrial & Lab<br>
+                    <strong>Concentration:</strong> 99.8% (Glacial)<br>
+                    <strong>Packaging:</strong> 500ml, 1L, 5L, 25L bottles<br>
+                    <strong>Application:</strong> Organic synthesis, Leather tanning, Vinegar production
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Acetic Acid (CH₃COOH)')">Request Quote</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Wood Camp Pharma</h4>
+                <p style="color: var(--text-secondary); margin: var(--spacing-md) 0;">
+                    Industrial and laboratory chemicals with full compliance and safety support.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wood.html">Wood</a></li>
+                    <li><a href="chemicals.html">Chemicals</a></li>
+                    <li><a href="pharma.html">Pharma</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p style="color: var(--text-secondary);">
+                    Email: sales@woodcamppharma.com<br>
+                    Phone: +91 (123) 456-7890
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Wood Camp Pharma Pvt. Ltd. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- QUOTE MODAL -->
+<div id="quoteModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Request Quote</h2>
+            <button class="modal-close">✕</button>
+        </div>
+        <form id="quoteForm">
+            <div class="form-group">
+                <label for="quoteProductName">Product Name</label>
+                <input type="text" id="quoteProductName" readonly>
+            </div>
+            <div class="form-group">
+                <label for="quoteCompanyName">Company Name</label>
+                <input type="text" id="quoteCompanyName" required>
+            </div>
+            <div class="form-group">
+                <label for="quoteEmail">Email</label>
+                <input type="email" id="quoteEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="quotePhone">Phone</label>
+                <input type="tel" id="quotePhone" required>
+            </div>
+            <div class="form-group">
+                <label for="quoteQuantity">Quantity Required</label>
+                <input type="text" id="quoteQuantity" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+        </form>
+    </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

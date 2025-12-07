@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmaceutical Products - Wood Camp Pharma</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<!-- HEADER / NAVBAR -->
+<header>
+    <nav class="container">
+        <div class="logo">Wood Camp Pharma</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="wood.html">Wood Products</a></li>
+            <li><a href="chemicals.html">Chemicals</a></li>
+            <li><a href="pharma.html">Pharma</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="login.html" class="btn-login">Login</a></li>
+        </ul>
+        <button class="nav-toggle">☰</button>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" style="margin-top: 60px; min-height: 60vh; background: linear-gradient(135deg, #0a2a1e 0%, #1a0a2a 50%, #0a1a2a 100%);">
+    <div class="container" style="text-align: center; z-index: 10; position: relative;">
+        <h1>Pharmaceutical Products</h1>
+        <p style="font-size: 1.2rem; margin-top: var(--spacing-lg);">WHO-GMP certified APIs and formulations for global markets</p>
+    </div>
+</section>
+
+<!-- COMPLIANCE HIGHLIGHTS -->
+<section style="padding: var(--spacing-lg) 0; background-color: rgba(0, 255, 153, 0.05); border: 1px solid rgba(0, 255, 153, 0.2);">
+    <div class="container">
+        <h3 style="color: var(--accent-teal); margin-bottom: var(--spacing-sm);">✓ Quality & Compliance Assured</h3>
+        <p style="color: var(--text-secondary);">
+            All products manufactured under WHO-GMP guidelines with rigorous quality control. 
+            Full traceability, batch documentation, and international regulatory certifications included.
+        </p>
+    </div>
+</section>
+
+<!-- PRODUCTS SECTION -->
+<section style="padding: var(--spacing-2xl) 0; background-color: var(--bg-dark);">
+    <div class="container">
+        <h2 style="margin-bottom: var(--spacing-lg);">Our Pharmaceutical Products</h2>
+
+        <!-- Filters -->
+        <div class="filter-pills">
+            <button class="filter-pill active" onclick="filterProducts('all')">All Products</button>
+            <button class="filter-pill" onclick="filterProducts('api')">APIs</button>
+            <button class="filter-pill" onclick="filterProducts('formulation')">Formulations</button>
+            <button class="filter-pill" onclick="filterProducts('intermediate')">Intermediates</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="card" data-category="api">
+                <div class="card-icon">💊</div>
+                <h3 class="card-title">Paracetamol API</h3>
+                <p class="card-description">
+                    <strong>Form:</strong> Powder (crystalline)<br>
+                    <strong>Purity:</strong> ≥ 99.5%<br>
+                    <strong>Dosage Form:</strong> Tablet, Capsule, Liquid<br>
+                    <strong>Certifications:</strong> WHO-GMP, EP, USP, BP<br>
+                    <strong>Packaging:</strong> 25kg drums
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Paracetamol API')">Request Quote</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="card" data-category="api">
+                <div class="card-icon">💊</div>
+                <h3 class="card-title">Ibuprofen API</h3>
+                <p class="card-description">
+                    <strong>Form:</strong> Powder (white to off-white)<br>
+                    <strong>Purity:</strong> ≥ 99.0%<br>
+                    <strong>Dosage Form:</strong> Tablet, Capsule<br>
+                    <strong>Certifications:</strong> WHO-GMP, EP, USP<br>
+                    <strong>Packaging:</strong> 25kg drums
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Ibuprofen API')">Request Quote</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="card" data-category="formulation">
+                <div class="card-icon">💉</div>
+                <h3 class="card-title">Ampicillin Trihydrate</h3>
+                <p class="card-description">
+                    <strong>Form:</strong> Powder<br>
+                    <strong>Purity:</strong> ≥ 98.0%<br>
+                    <strong>Dosage Form:</strong> Capsule, Injectable<br>
+                    <strong>Certifications:</strong> WHO-GMP, EP, USP, BP<br>
+                    <strong>Packaging:</strong> 10kg, 25kg drums
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Ampicillin Trihydrate')">Request Quote</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="card" data-category="api">
+                <div class="card-icon">💊</div>
+                <h3 class="card-title">Metformin HCl API</h3>
+                <p class="card-description">
+                    <strong>Form:</strong> Crystalline powder<br>
+                    <strong>Purity:</strong> ≥ 99.5%<br>
+                    <strong>Dosage Form:</strong> Tablet, Capsule, Suspension<br>
+                    <strong>Certifications:</strong> WHO-GMP, EP, USP, JP<br>
+                    <strong>Packaging:</strong> 25kg drums
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Metformin HCl API')">Request Quote</button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="card" data-category="intermediate">
+                <div class="card-icon">⚗️</div>
+                <h3 class="card-title">Diclofenac Sodium</h3>
+                <p class="card-description">
+                    <strong>Form:</strong> Crystalline powder<br>
+                    <strong>Purity:</strong> ≥ 99.0%<br>
+                    <strong>Dosage Form:</strong> Tablet, Injectable<br>
+                    <strong>Certifications:</strong> WHO-GMP, EP, USP, BP<br>
+                    <strong>Packaging:</strong> 25kg drums
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Diclofenac Sodium')">Request Quote</button>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="card" data-category="formulation">
+                <div class="card-icon">💉</div>
+                <h3 class="card-title">Cefixime Trihydrate</h3>
+                <p class="card-description">
+                    <strong>Form:</strong> Powder<br>
+                    <strong>Purity:</strong> ≥ 98.5%<br>
+                    <strong>Dosage Form:</strong> Capsule, Suspension<br>
+                    <strong>Certifications:</strong> WHO-GMP, EP, USP, BP<br>
+                    <strong>Packaging:</strong> 10kg, 25kg drums
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Cefixime Trihydrate')">Request Quote</button>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="card" data-category="api">
+                <div class="card-icon">💊</div>
+                <h3 class="card-title">Cetirizine HCl API</h3>
+                <p class="card-description">
+                    <strong>Form:</strong> White crystalline powder<br>
+                    <strong>Purity:</strong> ≥ 99.5%<br>
+                    <strong>Dosage Form:</strong> Tablet, Capsule, Liquid<br>
+                    <strong>Certifications:</strong> WHO-GMP, EP, USP, BP, JP<br>
+                    <strong>Packaging:</strong> 25kg drums
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Cetirizine HCl API')">Request Quote</button>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="card" data-category="intermediate">
+                <div class="card-icon">⚗️</div>
+                <h3 class="card-title">Atorvastatin Calcium</h3>
+                <p class="card-description">
+                    <strong>Form:</strong> White to off-white powder<br>
+                    <strong>Purity:</strong> ≥ 99.0%<br>
+                    <strong>Dosage Form:</strong> Tablet<br>
+                    <strong>Certifications:</strong> WHO-GMP, EP, USP, BP<br>
+                    <strong>Packaging:</strong> 25kg drums
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Atorvastatin Calcium')">Request Quote</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- QUALITY SECTION -->
+<section style="padding: var(--spacing-2xl) 0; background-color: var(--bg-darker); border-top: 1px solid var(--border-color);">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: var(--spacing-xl);">Our Quality Commitment</h2>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-lg);">
+            <div class="feature-card">
+                <div class="feature-icon">🏭</div>
+                <h3>WHO-GMP Certified</h3>
+                <p>Manufacturing facilities meet WHO Good Manufacturing Practice standards.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🔬</div>
+                <h3>Advanced Testing</h3>
+                <p>State-of-the-art analytical laboratories with certified equipment and methods.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">📋</div>
+                <h3>Full Documentation</h3>
+                <p>Complete batch records, Certificates of Analysis, and regulatory compliance documentation.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Global Standards</h3>
+                <p>Products meet EP, USP, BP, JP, and other international pharmacopeial standards.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🔐</div>
+                <h3>Traceability</h3>
+                <p>Full source tracking and traceability for each batch and raw material.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⏱️</div>
+                <h3>Timely Delivery</h3>
+                <p>Reliable supply chain with consistent on-time delivery worldwide.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Wood Camp Pharma</h4>
+                <p style="color: var(--text-secondary); margin: var(--spacing-md) 0;">
+                    WHO-GMP certified pharmaceutical products for global markets.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wood.html">Wood</a></li>
+                    <li><a href="chemicals.html">Chemicals</a></li>
+                    <li><a href="pharma.html">Pharma</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p style="color: var(--text-secondary);">
+                    Email: sales@woodcamppharma.com<br>
+                    Phone: +91 (123) 456-7890
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Wood Camp Pharma Pvt. Ltd. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- QUOTE MODAL -->
+<div id="quoteModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Request Quote</h2>
+            <button class="modal-close">✕</button>
+        </div>
+        <form id="quoteForm">
+            <div class="form-group">
+                <label for="quoteProductName">Product Name</label>
+                <input type="text" id="quoteProductName" readonly>
+            </div>
+            <div class="form-group">
+                <label for="quoteCompanyName">Company Name</label>
+                <input type="text" id="quoteCompanyName" required>
+            </div>
+            <div class="form-group">
+                <label for="quoteEmail">Email</label>
+                <input type="email" id="quoteEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="quotePhone">Phone</label>
+                <input type="tel" id="quotePhone" required>
+            </div>
+            <div class="form-group">
+                <label for="quoteQuantity">Quantity Required</label>
+                <input type="text" id="quoteQuantity" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+        </form>
+    </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

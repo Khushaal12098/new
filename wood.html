@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wood Products - Wood Camp Pharma</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<!-- HEADER / NAVBAR -->
+<header>
+    <nav class="container">
+        <div class="logo">Wood Camp Pharma</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="wood.html">Wood Products</a></li>
+            <li><a href="chemicals.html">Chemicals</a></li>
+            <li><a href="pharma.html">Pharma</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="login.html" class="btn-login">Login</a></li>
+        </ul>
+        <button class="nav-toggle">☰</button>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero" style="margin-top: 60px; min-height: 60vh; background: linear-gradient(135deg, #1a2a1a 0%, #0a1a0a 50%, #152015 100%);">
+    <div class="container" style="text-align: center; z-index: 10; position: relative;">
+        <h1>Wood Products</h1>
+        <p style="font-size: 1.2rem; margin-top: var(--spacing-lg);">Premium timber, plywood, and wooden boards for construction and furniture</p>
+    </div>
+</section>
+
+<!-- PRODUCTS SECTION -->
+<section style="padding: var(--spacing-2xl) 0; background-color: var(--bg-dark);">
+    <div class="container">
+        <h2 style="margin-bottom: var(--spacing-lg);">Our Wood Products</h2>
+
+        <!-- Filters -->
+        <div class="filter-pills">
+            <button class="filter-pill active" onclick="filterProducts('all')">All Products</button>
+            <button class="filter-pill" onclick="filterProducts('plywood')">Plywood</button>
+            <button class="filter-pill" onclick="filterProducts('timber')">Timber</button>
+            <button class="filter-pill" onclick="filterProducts('boards')">Boards</button>
+            <button class="filter-pill" onclick="filterProducts('veneer')">Veneer</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="card" data-category="plywood">
+                <div class="card-icon">📦</div>
+                <h3 class="card-title">Marine Plywood (13mm)</h3>
+                <p class="card-description">
+                    <strong>Grade:</strong> BWR (Boiling Water Resistant)<br>
+                    <strong>Size:</strong> 2440 x 1220 mm<br>
+                    <strong>Thickness:</strong> 13 mm<br>
+                    <strong>Use:</strong> Shipbuilding, Marine applications
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Marine Plywood (13mm)')">Request Quote</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="card" data-category="plywood">
+                <div class="card-icon">📦</div>
+                <h3 class="card-title">Commercial Plywood (9mm)</h3>
+                <p class="card-description">
+                    <strong>Grade:</strong> MR (Moisture Resistant)<br>
+                    <strong>Size:</strong> 2440 x 1220 mm<br>
+                    <strong>Thickness:</strong> 9 mm<br>
+                    <strong>Use:</strong> Furniture, Interior construction
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Commercial Plywood (9mm)')">Request Quote</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="card" data-category="timber">
+                <div class="card-icon">🌳</div>
+                <h3 class="card-title">Teak Timber (FAS Grade)</h3>
+                <p class="card-description">
+                    <strong>Species:</strong> Premium Teak<br>
+                    <strong>Grade:</strong> FAS (First and Second)<br>
+                    <strong>Moisture:</strong> 8-12%<br>
+                    <strong>Use:</strong> Fine furniture, Decking
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Teak Timber (FAS Grade)')">Request Quote</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="card" data-category="timber">
+                <div class="card-icon">🌳</div>
+                <h3 class="card-title">Softwood Timber</h3>
+                <p class="card-description">
+                    <strong>Species:</strong> Pine, Spruce<br>
+                    <strong>Grade:</strong> C24 Structural<br>
+                    <strong>Sizes:</strong> Multiple cross-sections<br>
+                    <strong>Use:</strong> Structural, Construction
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Softwood Timber')">Request Quote</button>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="card" data-category="boards">
+                <div class="card-icon">📋</div>
+                <h3 class="card-title">Blockboard (12mm)</h3>
+                <p class="card-description">
+                    <strong>Grade:</strong> Commercial<br>
+                    <strong>Size:</strong> 2440 x 1220 mm<br>
+                    <strong>Thickness:</strong> 12 mm<br>
+                    <strong>Use:</strong> Partitions, Furniture backing
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Blockboard (12mm)')">Request Quote</button>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="card" data-category="veneer">
+                <div class="card-icon">✨</div>
+                <h3 class="card-title">Teak Veneer Sheet</h3>
+                <p class="card-description">
+                    <strong>Type:</strong> Sliced & Rotary Cut<br>
+                    <strong>Thickness:</strong> 0.5 - 2 mm<br>
+                    <strong>Width:</strong> Up to 240 mm<br>
+                    <strong>Use:</strong> Furniture facing, Decoration
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Teak Veneer Sheet')">Request Quote</button>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="card" data-category="boards">
+                <div class="card-icon">📋</div>
+                <h3 class="card-title">Particle Board (18mm)</h3>
+                <p class="card-description">
+                    <strong>Grade:</strong> P2 (Loadbearing)<br>
+                    <strong>Size:</strong> 2440 x 1220 mm<br>
+                    <strong>Thickness:</strong> 18 mm<br>
+                    <strong>Use:</strong> Furniture cores, Shelving
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Particle Board (18mm)')">Request Quote</button>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="card" data-category="plywood">
+                <div class="card-icon">📦</div>
+                <h3 class="card-title">Exterior Grade Plywood</h3>
+                <p class="card-description">
+                    <strong>Grade:</strong> WBP (Weather & Boil Proof)<br>
+                    <strong>Size:</strong> 2440 x 1220 mm<br>
+                    <strong>Thickness:</strong> 12 mm<br>
+                    <strong>Use:</strong> Outdoor applications, Roofing
+                </p>
+                <button class="btn btn-secondary" style="width: 100%; margin-top: auto;" onclick="openQuoteModal('Exterior Grade Plywood')">Request Quote</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Wood Camp Pharma</h4>
+                <p style="color: var(--text-secondary); margin: var(--spacing-md) 0;">
+                    Premium wood products for construction and furniture applications.
+                </p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="wood.html">Wood</a></li>
+                    <li><a href="chemicals.html">Chemicals</a></li>
+                    <li><a href="pharma.html">Pharma</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p style="color: var(--text-secondary);">
+                    Email: sales@woodcamppharma.com<br>
+                    Phone: +91 (123) 456-7890
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Wood Camp Pharma Pvt. Ltd. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- QUOTE MODAL -->
+<div id="quoteModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Request Quote</h2>
+            <button class="modal-close">✕</button>
+        </div>
+        <form id="quoteForm">
+            <div class="form-group">
+                <label for="quoteProductName">Product Name</label>
+                <input type="text" id="quoteProductName" readonly>
+            </div>
+            <div class="form-group">
+                <label for="quoteCompanyName">Company Name</label>
+                <input type="text" id="quoteCompanyName" required>
+            </div>
+            <div class="form-group">
+                <label for="quoteEmail">Email</label>
+                <input type="email" id="quoteEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="quotePhone">Phone</label>
+                <input type="tel" id="quotePhone" required>
+            </div>
+            <div class="form-group">
+                <label for="quoteQuantity">Quantity Required</label>
+                <input type="text" id="quoteQuantity" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+        </form>
+    </div>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

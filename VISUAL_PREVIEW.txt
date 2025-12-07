@@ -1,0 +1,378 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                   WOOD CAMP PHARMA - VISUAL OVERVIEW                       ║
+║                          All Pages & Features                              ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                              HOME PAGE (index.html)
+═══════════════════════════════════════════════════════════════════════════════
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│ [NAVBAR - Fixed on scroll]                                                │
+│ Logo: Wood Camp Pharma    Home | Wood | Chemicals | Pharma | [LOGIN BTN]  │
+└───────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                            [HERO SECTION]                                  │
+│                                                                            │
+│  Heading: "Innovating in Wood, Chemicals & Pharma"                        │
+│  Subheading: "Leading manufacturer..."                                    │
+│                                                                            │
+│  [Get in Touch Form]                                                       │
+│  ┌────────────────────┐                                                    │
+│  │ Full Name          │                                                    │
+│  │ Email              │                                                    │
+│  │ Phone              │                                                    │
+│  │ Country (dropdown) │                                                    │
+│  │ Interest (dropdown)│                                                    │
+│  │ [SUBMIT BUTTON]    │                                                    │
+│  └────────────────────┘                                                    │
+└───────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                       [PRODUCT CATEGORIES]                                 │
+│                                                                            │
+│  ┌──────────────────┐  ┌──────────────────┐  ┌──────────────────┐        │
+│  │  🌲  Wood        │  │  ⚗️  Chemicals   │  │  💊  Pharma     │        │
+│  │                  │  │                  │  │                  │        │
+│  │ Premium timber   │  │ Industrial       │  │ WHO-GMP cert...  │        │
+│  │ and plywood...   │  │ chemicals...     │  │                  │        │
+│  │                  │  │                  │  │                  │        │
+│  │ [View More →]    │  │ [View More →]    │  │ [View More →]    │        │
+│  └──────────────────┘  └──────────────────┘  └──────────────────┘        │
+└───────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                        [ABOUT SECTION]                                     │
+│                                                                            │
+│  Description...                    │  25+  │  50+   │  500+              │
+│                                    │ Years │Country │Products            │
+│                                    │       │Served  │                    │
+└───────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                      [FEATURES - Why Choose Us]                            │
+│                                                                            │
+│  ✓ Quality Assurance  │ 🌍 Global Compliance │ 🔬 R&D Excellence        │
+│  ♻️ Sustainability    │ 🚚 Reliable Delivery │ 💬 Expert Support        │
+└───────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                       [CONTACT SECTION]                                    │
+│                                                                            │
+│  [Contact Form]                    │  Contact Info                         │
+│  Name                              │  📍 Address                           │
+│  Email                             │  📞 Phone                             │
+│  Message                           │  ✉️  Email                           │
+│  [Send Message Button]             │  [Google Map Embed]                   │
+└───────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│ [FOOTER]                                                                  │
+│ Quick Links | Products | Legal | Social Icons | Copyright                │
+└───────────────────────────────────────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                         PRODUCT PAGES (wood.html, etc)
+═══════════════════════════════════════════════════════════════════════════════
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│ [NAVBAR]                                                                  │
+└───────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                        [HERO BANNER]                                       │
+│                    Wood Products                                          │
+│           Premium timber, plywood, and wooden boards...                   │
+└───────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                      [FILTER PILLS]                                        │
+│   [All] [Plywood] [Timber] [Boards] [Veneer]                             │
+└───────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                    [PRODUCT GRID - 8 Products]                             │
+│                                                                            │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │
+│  │ 📦 Marine    │  │ 📦 Commercial│  │ 🌳 Teak      │  │ 🌳 Softwood  │  │
+│  │ Plywood      │  │ Plywood      │  │ Timber       │  │ Timber       │  │
+│  │              │  │              │  │              │  │              │  │
+│  │ Grade: BWR   │  │ Grade: MR    │  │ Grade: FAS   │  │ Grade: C24   │  │
+│  │ 13mm...      │  │ 9mm...       │  │ Premium...   │  │ Structural.. │  │
+│  │              │  │              │  │              │  │              │  │
+│  │[Request Qt] │  │[Request Qt] │  │[Request Qt] │  │[Request Qt] │  │
+│  └──────────────┘  └──────────────┘  └──────────────┘  └──────────────┘  │
+│                                                                            │
+│  [4 More Products Below - Same Layout]                                    │
+└───────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────┐
+│                    [QUOTE REQUEST MODAL]                                   │
+│                                                                            │
+│  ┌─────────────────────────────────────┐                                  │
+│  │ Request Quote                    ✕  │                                  │
+│  ├─────────────────────────────────────┤                                  │
+│  │ Product Name: [Auto-filled]         │                                  │
+│  │ Company Name:                       │                                  │
+│  │ Email:                              │                                  │
+│  │ Phone:                              │                                  │
+│  │ Quantity Required:                  │                                  │
+│  │                                     │                                  │
+│  │ [SUBMIT REQUEST BUTTON]             │                                  │
+│  └─────────────────────────────────────┘                                  │
+└───────────────────────────────────────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                         LOGIN PAGE (login.html)
+═══════════════════════════════════════════════════════════════════════════════
+
+                    ┌──────────────────────────┐
+                    │                          │
+                    │  Wood Camp Pharma        │
+                    │  Admin Portal            │
+                    │                          │
+                    │ ┌────────────────────┐   │
+                    │ │ Email Address  [✓] │   │
+                    │ │ admin@demo.com     │   │
+                    │ └────────────────────┘   │
+                    │                          │
+                    │ ┌────────────────────┐   │
+                    │ │ Password       [✓] │   │
+                    │ │ ••••••••••         │   │
+                    │ │ [Forgot Password?] │   │
+                    │ └────────────────────┘   │
+                    │                          │
+                    │ [LOGIN BUTTON]           │
+                    │                          │
+                    │ ┌────────────────────┐   │
+                    │ │ Demo Credentials:  │   │
+                    │ │ admin@demo.com     │   │
+                    │ │ Admin@123          │   │
+                    │ └────────────────────┘   │
+                    │                          │
+                    └──────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                    ADMIN DASHBOARD (admin/dashboard.html)
+═══════════════════════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ [SIDEBAR]                          │ [MAIN AREA]                           │
+│                                    │                                       │
+│ Wood Camp Pharma                   │ [TOPBAR]                              │
+│                                    │ Welcome, Admin  [Avatar]              │
+│ 📊 Dashboard                       │                                       │
+│ 📦 Products                        │ Dashboard                             │
+│ 📈 Reports                         │ Overview of platform activity         │
+│ ⚙️ Settings                        │                                       │
+│                                    │ ┌──────────────┐┌──────────────┐     │
+│ [Logout Button]                    │ │ 15           ││ 5            │     │
+│                                    │ │ User Leads   ││ Wood Products│     │
+│                                    │ └──────────────┘└──────────────┘     │
+│                                    │ ┌──────────────┐┌──────────────┐     │
+│                                    │ │ 4            ││ 4            │     │
+│                                    │ │ Chemical Prod││ Pharma Prod  │     │
+│                                    │ └──────────────┘└──────────────┘     │
+│                                    │                                       │
+│                                    │ [CHART: Product Interest Distribution]│
+│                                    │                                       │
+│                                    │ ▁▂▃ Wood ▂▃▄ Chemical ▃▄▅ Pharma     │
+│                                    │                                       │
+│                                    │ [TABLE: Recent User Leads]            │
+│                                    │ Name│Email│Phone│Country│Interest    │
+│                                    │ ─────────────────────────────         │
+│                                    │ John│...│...│India│Wood Prod        │
+│                                    │ Jane│...│...│USA  │Chemicals        │
+│                                    │ (3 more rows)                         │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                   ADMIN PRODUCTS (admin/products.html)
+═══════════════════════════════════════════════════════════════════════════════
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ [SIDEBAR]                          │ [MAIN AREA]                           │
+│                                    │                                       │
+│ Wood Camp Pharma                   │ [TOPBAR]                              │
+│                                    │ Welcome, Admin  [Avatar]              │
+│ 📊 Dashboard                       │                                       │
+│ 📦 Products (ACTIVE)               │ Product Management                    │
+│ 📈 Reports                         │ Manage and organize product catalog   │
+│ ⚙️ Settings                        │                                       │
+│                                    │ [Wood] [Chemicals] [Pharma]           │
+│ [Logout Button]                    │                                       │
+│                                    │ [+ Add Product] [📥 Import]           │
+│                                    │                                       │
+│                                    │ [PRODUCTS TABLE]                      │
+│                                    │ ID │Product│Category│Status│Actions  │
+│                                    │ ──────────────────────────────────    │
+│                                    │ 1  │Marine │wood   │Active│✏️ 🗑️     │
+│                                    │ 2  │Timber │wood   │Active│✏️ 🗑️     │
+│                                    │ 3  │Teak   │wood   │Active│✏️ 🗑️     │
+│                                    │ 4  │Softwd │wood   │Inact │✏️ 🗑️     │
+│                                    │ 5  │Blockb │wood   │Active│✏️ 🗑️     │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+Features:
+  ✏️ Edit - Modify product name
+  🗑️ Delete - Remove product (with confirmation)
+  + Add Product - Create new product
+  Tab Navigation - Switch between categories
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                            RESPONSIVE DESIGN
+═══════════════════════════════════════════════════════════════════════════════
+
+DESKTOP (1200px+)
+  ┌──────────────────────────────────────────────────┐
+  │              Multi-Column Layouts                │
+  │      Full-Width Hero | 3-Column Grid             │
+  │        Side-by-Side Content Sections             │
+  └──────────────────────────────────────────────────┘
+
+TABLET (768-1024px)
+  ┌──────────────────────────────────────────────────┐
+  │              2-Column Layouts                    │
+  │        Adjusted Navigation | Cards Stacked       │
+  │           Optimized for Touch Input              │
+  └──────────────────────────────────────────────────┘
+
+MOBILE (<768px)
+  ┌──────────────────────────────────────────────────┐
+  │         Single-Column Stack Layout               │
+  │  ┌────────────────────────────────┐              │
+  │  │  ☰ HAMBURGER MENU              │              │
+  │  │  Logo                           │              │
+  │  ├────────────────────────────────┤              │
+  │  │  [Full Width Content]           │              │
+  │  │  [Stacked Cards]                │              │
+  │  │  [Full Width Forms]             │              │
+  │  │  [Full Width Tables]            │              │
+  │  └────────────────────────────────┘              │
+  └──────────────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                              COLOR PALETTE
+═══════════════════════════════════════════════════════════════════════════════
+
+DARK BACKGROUNDS
+  ██ #050509 (Primary - Hero, sections)
+  ██ #0a0a0f (Secondary - Cards, alternate)
+  
+ACCENT COLORS
+  ██ #00d9ff (Cyan - Primary accent, borders, text)
+  ██ #b300ff (Purple - Secondary accent)
+  ██ #ff00ff (Magenta - Highlights, gradients)
+  ██ #00ffcc (Teal - Hover states, success)
+  
+TEXT COLORS
+  ██ #ffffff (Primary text - Headings, labels)
+  ██ #b0b0c0 (Secondary text - Body, descriptions)
+  
+SEMI-TRANSPARENT
+  ██ rgba(255, 255, 255, 0.05) - Borders, overlays
+  ██ rgba(0, 217, 255, 0.1) - Hover backgrounds
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                              ANIMATIONS
+═══════════════════════════════════════════════════════════════════════════════
+
+PAGE LOAD
+  ↗ Fade-in (0-1 opacity over 0.8s)
+  ↗ Slide-up (30px → 0px over 0.8s)
+  ↗ Cascade delay (0.2s between elements)
+
+SCROLL ANIMATIONS
+  ↗ Cards fade in when scrolled into view
+  ↗ Headings slide up on scroll
+  ↗ Staggered animation sequence
+
+HOVER EFFECTS
+  ↗ Scale up (100% → 105% on card:hover)
+  ↗ Glow effect (box-shadow with accent color)
+  ↗ Smooth border color transition
+  ↗ Text color change on links
+
+COUNTER ANIMATIONS
+  ↗ Numbers count from 0 to target
+  ↗ Smooth increment animation
+  ↗ Plays when section scrolls into view
+
+FLOATING ELEMENTS
+  ↗ Background gradients float subtly
+  ↗ Infinite loop animation
+  ↗ Creates depth and movement
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                          DATA FLOW DIAGRAM
+═══════════════════════════════════════════════════════════════════════════════
+
+HOME PAGE
+    ↓
+[User Fills Form] → [Submit Button]
+    ↓
+[JavaScript Handler] → [localStorage.setItem('userLeads')]
+    ↓
+[Data Stored Locally]
+    ↓
+[Admin Logs In] → [Checks localStorage for 'isLoggedIn']
+    ↓
+[Dashboard Loads] → [Reads 'userLeads' from localStorage]
+    ↓
+[Displays in Table & Chart]
+    ↓
+[Admin Can Manage Products] → [localStorage for products_wood, etc]
+    ↓
+[All Data Persists Across Sessions]
+
+
+═══════════════════════════════════════════════════════════════════════════════
+                              INTERACTION FLOW
+═══════════════════════════════════════════════════════════════════════════════
+
+VISITOR FLOW
+  1. Opens index.html
+  2. Browses home page
+  3. Fills "Get in Touch" form
+  4. Submits form
+  5. Sees success message
+  6. Clicks product link (wood.html, chemicals.html, pharma.html)
+  7. Views products
+  8. Filters by category
+  9. Requests quote
+  10. Fills quote form
+  11. Quote saved to localStorage
+  12. Returns to home page
+
+ADMIN FLOW
+  1. Clicks "Login" button
+  2. Enters demo credentials
+  3. Redirected to dashboard
+  4. Views analytics
+  5. Sees recent leads
+  6. Clicks "Products" tab
+  7. Views product list
+  8. Adds new product
+  9. Edits existing product
+  10. Deletes product
+  11. Switches categories
+  12. Logs out
+  13. Redirected to login page
+
+
+═══════════════════════════════════════════════════════════════════════════════
+
+All visual elements are responsive and adapt to different screen sizes.
+The design uses CSS Grid, Flexbox, and media queries for perfect layout.
+
+Ready to view in your browser! Open index.html now. 🚀
