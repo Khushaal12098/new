@@ -12,29 +12,8 @@ class SmoothScrollManager {
   }
 
   initLenis() {
-    // Initialize Lenis for smooth scrolling
-    // Note: Requires Lenis library to be included in HTML
-    if (typeof Lenis !== 'undefined') {
-      this.lenis = new Lenis({
-        duration: 1.2,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        direction: 'vertical',
-        gestureDirection: 'vertical',
-        smooth: true,
-        smoothTouch: false,
-        touchMultiplier: 2,
-      });
-
-      this.raf = (time) => {
-        this.lenis.raf(time);
-        requestAnimationFrame(this.raf);
-      };
-
-      requestAnimationFrame(this.raf);
-      console.log('Lenis smooth scroll initialized');
-    } else {
-      console.warn('Lenis library not found. Smooth scrolling may not work optimally.');
-    }
+    // Lenis disabled - using native scroll behavior
+    console.log('Using native scroll behavior');
   }
 
   setupScrollListener() {
